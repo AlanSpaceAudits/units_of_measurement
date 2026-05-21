@@ -1,0 +1,434 @@
+\documentclass[11pt]{article}
+
+% ============================================================
+%   A SYSTEM OF MUTUALLY RELIANT RATIOS
+%   classic PDF  ·  compile: pdflatex
+% ============================================================
+
+\usepackage[a4paper,
+            top=2.0cm, bottom=1.8cm,
+            left=2.3cm, right=2.3cm,
+            headheight=24pt]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{tcolorbox}
+\tcbuselibrary{skins, breakable}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{microtype}
+\usepackage{amsmath, amssymb}
+\usepackage{hyperref}
+
+\definecolor{boxbg}   {gray}{0.95}
+\definecolor{boxframe}{gray}{0.45}
+\definecolor{dimtext} {gray}{0.38}
+
+\hypersetup{
+  pdftitle={A System of Mutually Reliant Ratios Creates the Internal Consistency of the System},
+  pdfauthor={Aether Cosmology Research Group},
+  hidelinks}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\footnotesize\itshape A System of Mutually Reliant Ratios}
+\fancyhead[R]{\includegraphics[height=0.52cm]{ac_logo.png}}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\tcbset{
+  quotebox/.style={
+    enhanced, breakable,
+    colback=boxbg, colframe=boxframe, boxrule=0.4pt, arc=0.6mm,
+    left=4mm, right=4mm, top=2.6mm, bottom=2.6mm },
+  mathbox/.style={
+    enhanced, breakable,
+    colback=boxbg, colframe=black, boxrule=0.5pt, arc=0mm,
+    left=4mm, right=4mm, top=3mm, bottom=3mm },
+}
+
+\newcommand{\partdiv}[1]{%
+  \par\vspace{7pt}\noindent\rule{\linewidth}{0.9pt}\par\vspace{2pt}%
+  \noindent{\large\bfseries #1}\par\vspace{1pt}%
+  \noindent\rule{\linewidth}{0.4pt}\par\vspace{4pt}}
+
+\setlist[itemize]{leftmargin=1.5em, itemsep=2pt, topsep=3pt}
+
+% ============================================================
+\begin{document}
+
+% ===================== TITLE =====================
+\thispagestyle{fancy}
+\begin{center}
+  \includegraphics[height=1.5cm]{ac_logo.png}\\[9pt]
+  {\Large\bfseries A System of Mutually Reliant Ratios\\
+   Creates the Internal Consistency of the System}\\[7pt]
+  {\large\itshape Works in the Chinese li and the metric metre.}\\[9pt]
+  {\normalsize Aether Cosmology Research Group}\\[3pt]
+  {\footnotesize\color{dimtext}\today}
+\end{center}
+\vspace{1pt}
+\noindent\rule{\linewidth}{0.4pt}
+
+% ===================== PREFACE =====================
+\section*{Preface: Internal Consistency}
+
+\begin{tcolorbox}[quotebox]
+\itshape ``An ideal system of fundamental constants would be one in which
+these theoretical relationships were satisfied rigorously, while the adopted
+value of each individual constant agreed with its observed value.''
+\par\vspace{0.3em}
+\normalfont\footnotesize\color{dimtext}
+W. de Sitter \& D. Brouwer (1938), \emph{On the System of Astronomical
+Constants}, p.~213. De Sitter adds, p.~213: \textbf{``our present system is
+not consistent.''}
+\end{tcolorbox}
+
+\noindent
+A distance is never measured directly. It is computed from an angle and a
+known length, by trigonometry: a triangle is fixed only when \textbf{two of
+its three} parts are known. Feed in a radius $R$ and an angle, and a distance
+comes out. Change the unit of $R$ and every distance changes by the same
+factor. The unit is a free choice; the geometry is not. This brief runs the
+whole derivation in two units, the Chinese \textbf{li} and the metric
+\textbf{metre}, and shows the two results convert exactly into each other.
+
+% ===================== PART I =====================
+\partdiv{Part I: The Chinese System}
+
+\section{The angle: the du}
+
+The Chinese divided one full turn of the sky into \textbf{365.25 du}, one du
+for each day the Sun drifts through the stars in a year. One du is therefore
+just under one degree. Each du holds 10 fen.
+
+\begin{tcolorbox}[mathbox]
+$1\;\text{du} = \dfrac{360^\circ}{365.25} = 0.9856^\circ = 59.14'$
+\end{tcolorbox}
+
+\section{The length: the li}
+
+The li is the Chinese unit of ground distance ($1\;\text{li} = 300\;\text{bu}$).
+In 724~AD the astronomer Yi Xing tied it to the sky: marching north along a
+ground meridian, the pole star climbs \textbf{1 du for every 351.267 li} (Beer et al., 1961).
+Closed into a full circle of $365.25$~du, the survey gives the circumference
+of the heavens in li, and the radius follows from $C = 2\pi R$.
+
+\begin{tcolorbox}[mathbox]
+$\text{celestial circle} = 351.267 \times 365.25 \approx 128{,}300\;\text{li}
+\qquad
+R = \dfrac{\text{circle}}{2\pi} \approx 20{,}420\;\text{li}$
+\end{tcolorbox}
+
+\begin{tcolorbox}[quotebox]
+\textbf{Gai Tian cosmology.} This is the Chinese canopy-heaven model,
+\emph{Gai Tian} (Cullen, 1996; Needham, 1959): the ground is a flat plane and
+the li measures travel across
+it; the du divides the sky, the Heavens turning around the observer. The circle
+and radius $R$ above are dimensions of the celestial sphere, not of a
+terrestrial globe. The arc is in the sky, a matter of optics; the ground
+itself does not curve. The frame is observer-centric, each observer at the
+centre of his own sky.
+\end{tcolorbox}
+
+\section{The Moon and the Sun, in li}
+
+Parallax turns an angle into a distance. A body at distance $d$, seen against
+the radius $R$ from Section~2, subtends an angle $\theta$ fixed by the
+relation below; supply $R$ and that angle and the distance follows. Both
+angles used here are parallax angles. $\theta_{\text{moon}}$ is the Moon's
+horizontal parallax, the shift in its apparent place seen across a baseline
+$R$. $\theta_{\text{sun}}$ is the solar parallax, fixed from timing a transit
+of Venus or Mercury across the Sun's face.
+
+\begin{tcolorbox}[mathbox]
+$d = \dfrac{R}{\sin\theta}$
+\\[12pt]
+$\text{Moon}\;(\theta_{\text{moon}} = 57'):\quad
+ d = \dfrac{20{,}420}{\sin 57'} \approx 1{,}231{,}600\;\text{li}$
+\\[14pt]
+$\text{Sun}\;(\theta_{\text{sun}} = 8.79''):\quad
+ d = \dfrac{20{,}420}{\sin 8.79''} \approx 4.789\times10^{8}\;\text{li}
+ \;=\; 1\;\text{AU}$
+\end{tcolorbox}
+
+\noindent
+Kepler's third law gives each planet's orbit as a fixed ratio to Earth's.
+Its distance is that ratio times the AU.
+
+\begin{center}
+\renewcommand{\arraystretch}{1.15}
+\begin{tabular}{l r r}
+\textbf{Planet} & \textbf{Orbit ratio} & \textbf{Distance (li)}\\
+\hline
+Mercury &  0.387 & $1.854\times10^{8}$\\
+Venus   &  0.723 & $3.464\times10^{8}$\\
+Earth   &  1.000 & $4.789\times10^{8}$\\
+Mars    &  1.524 & $7.298\times10^{8}$\\
+Jupiter &  5.203 & $2.492\times10^{9}$\\
+Saturn  &  9.555 & $4.576\times10^{9}$\\
+Uranus  & 19.218 & $9.205\times10^{9}$\\
+Neptune & 30.110 & $1.442\times10^{10}$\\
+\hline
+\end{tabular}
+\end{center}
+
+\section{The speed of light and aberration, in li}
+
+The speed of light is a property of the vacuum, $c = 1/\sqrt{\mu_0\,\varepsilon_0}$.
+Measured against li-based units it comes to about $959{,}787$~li per second.
+
+\begin{tcolorbox}[mathbox]
+$c = \dfrac{1}{\sqrt{\mu_0\,\varepsilon_0}} \approx 959{,}787\;\text{li/s}$
+\end{tcolorbox}
+
+\noindent
+\textbf{Aberration route.} Earth's assumed motion is said to tilt starlight
+by the aberration angle $\kappa$ (Bradley, 1728), with
+$\tan\kappa = v_\oplus/c$ and $v_\oplus = 2\pi\,\text{AU}/T$, where $T$ is the
+year. Solved for the AU, this returns the Earth--Sun distance from $c$ and
+$\kappa$ alone, the route Foucault ran in 1862 from a measured $c$ and
+Bradley's $\kappa$ (Foucault, 1862).
+
+\begin{tcolorbox}[mathbox]
+$v_\oplus = c\,\tan\kappa \approx 95.37\;\text{li/s}
+\qquad
+1\;\text{AU} = \dfrac{v_\oplus\,T}{2\pi} \approx 4.790\times10^{8}\;\text{li}$
+\\[8pt]
+$\kappa + N + p = 20.50'' + 9.20'' + 50.29'' \approx 79.99''$
+\end{tcolorbox}
+
+\begin{tcolorbox}[quotebox]
+\textbf{The aberration angle is fixed, not measured.} A telescope records one
+quantity: the total stellar oscillation, the trepidation angle
+$\kappa+N+p \approx 80''$. Nothing in the observation splits it into
+aberration, nutation and precession. The route needs $\kappa$ to be exactly
+the slice for which $c\,\tan\kappa$ equals the Kepler velocity
+$2\pi\,\text{AU}/T$; that slice is not read off the oscillation, it is
+assigned the value that closes the identity. In 1805 Laplace had Delambre
+redetermine the light constant from the eclipses of Jupiter's moon Io, and
+Delambre returned exactly Bradley's aberration figure (Laplace, 1805). The
+aberration angle $\kappa$ and the solar parallax $\pi_\odot$ are both pinned
+to the AU, so the aberration route and the parallax route of Section~3
+return the same distance: that agreement is built in, not independent
+confirmation. In the observer-centric Gai Tian frame the Earth does not move.
+The telescope records one angle, the whole oscillation $\kappa+N+p$; the
+velocity read from it, $c\,\tan(\kappa+N+p)$, is the speed of nothing.
+\end{tcolorbox}
+
+% ===================== PART II =====================
+\partdiv{Part II: The Metric System}
+
+\section{The angle and the metre}
+
+The metric angle is the \textbf{degree}: one full turn is 360 degrees.
+
+The \textbf{metre} began in 1791 as $1/10{,}000{,}000$ of the Earth's
+meridian quadrant, pole to equator, a length pegged to the pole star as the
+li is. The Earth is an oblate spheroid; taking its equatorial circumference,
+$40{,}075$~km, the equatorial radius follows.
+
+\begin{tcolorbox}[mathbox]
+$\text{equatorial circumference} = 40{,}075\;\text{km}
+\qquad
+R = \dfrac{40{,}075\;\text{km}}{2\pi} \approx 6{,}378\;\text{km}$
+\end{tcolorbox}
+
+\begin{tcolorbox}[quotebox]
+\textbf{On the radius.} The Earth is an oblate spheroid: its equatorial
+radius $a = 6{,}378.137$~km exceeds its polar radius $b = 6{,}356.752$~km.
+This brief uses the equatorial radius. The commonly quoted $6{,}371$~km is
+the IUGG mean radius $R = (2a+b)/3$, an average over the spheroid; it is not
+used here.
+\end{tcolorbox}
+
+\begin{tcolorbox}[quotebox]
+\textbf{The two-sphere model.} The globe account drops the observer-centric
+sky for a geocentric one. It places a fictitious observer at the centre of
+the Earth; this linearises the separate observer hemispheres into one sphere
+and sets a terrestrial sphere and the celestial sphere in 1:1 correspondence.
+The radius $R$ here is that terrestrial sphere. Star positions and ground
+positions are both referred to the single fictitious centre.
+\end{tcolorbox}
+
+\section{The Moon and the Sun, in metres}
+
+The same parallax law $d = R/\sin\theta$, the same observed angles, the
+metric radius from Section~5.
+
+\begin{tcolorbox}[mathbox]
+$\text{Moon}\;(\theta = 57'):\quad
+ d = \dfrac{6{,}378\;\text{km}}{\sin 57'} \approx 384{,}690\;\text{km}$
+\\[14pt]
+$\text{Sun}\;(\theta = 8.79''):\quad
+ d = \dfrac{6{,}378\;\text{km}}{\sin 8.79''}
+ \approx 1.496\times10^{8}\;\text{km} \;=\; 1\;\text{AU}$
+\end{tcolorbox}
+
+\begin{center}
+\renewcommand{\arraystretch}{1.15}
+\begin{tabular}{l r r}
+\textbf{Planet} & \textbf{Orbit ratio} & \textbf{Distance (km)}\\
+\hline
+Mercury &  0.387 & $5.791\times10^{7}$\\
+Venus   &  0.723 & $1.082\times10^{8}$\\
+Earth   &  1.000 & $1.496\times10^{8}$\\
+Mars    &  1.524 & $2.279\times10^{8}$\\
+Jupiter &  5.203 & $7.783\times10^{8}$\\
+Saturn  &  9.555 & $1.429\times10^{9}$\\
+Uranus  & 19.218 & $2.875\times10^{9}$\\
+Neptune & 30.110 & $4.505\times10^{9}$\\
+\hline
+\end{tabular}
+\end{center}
+
+\section{The speed of light and aberration, in metres}
+
+The same vacuum relation, in metric units. Because $\mu_0$ and
+$\varepsilon_0$ are measured \textbf{per metre}, $c = 1/\sqrt{\mu_0\,\varepsilon_0}$
+comes out in metres per second.
+
+\begin{tcolorbox}[mathbox]
+$c = \dfrac{1}{\sqrt{\mu_0\,\varepsilon_0}} = 299{,}792{,}458\;\text{m/s}$
+\end{tcolorbox}
+
+\noindent
+The aberration route runs as in Section~4, with $c$ in m/s and $T$ the year:
+
+\begin{tcolorbox}[mathbox]
+$v_\oplus = c\,\tan\kappa \approx 29{,}789\;\text{m/s}
+\qquad
+1\;\text{AU} = \dfrac{v_\oplus\,T}{2\pi} \approx 1.496\times10^{8}\;\text{km}$
+\end{tcolorbox}
+
+\section{Light-time of flight, in metres}
+
+A distance can be restated as the time light takes to cross it. One
+light-second is $c \times 1\;\text{s}$; one light-minute is sixty of those.
+Dividing any distance by $c$ gives its light-time.
+
+\begin{tcolorbox}[mathbox]
+$1\;\text{light-second} \approx 299{,}792\;\text{km}
+\qquad
+1\;\text{light-minute} \approx 1.799\times10^{7}\;\text{km}$
+\\[8pt]
+$1\;\text{AU} \approx 8.32\;\text{light-minutes}$
+\end{tcolorbox}
+
+\begin{center}
+\renewcommand{\arraystretch}{1.15}
+\begin{tabular}{l r l r}
+\textbf{Planet} & \textbf{Light-time} & \textbf{Planet} & \textbf{Light-time}\\
+\hline
+Mercury & $3.22$~min  & Jupiter & $43.27$~min\\
+Venus   & $6.02$~min  & Saturn  & $79.47$~min\\
+Earth   & $8.32$~min  & Uranus  & $159.8$~min\\
+Mars    & $12.67$~min & Neptune & $250.4$~min\\
+\hline
+\end{tabular}
+\end{center}
+
+\section{The metre and \texorpdfstring{$c$}{c}: an algebra switch}
+
+Until 1983 the metre was the standard and $c$ was measured against it. In
+1983 $c$ was fixed at exactly $299{,}792{,}458$~m/s and the metre was
+redefined as the distance light travels in $1/c$ seconds.
+
+\begin{tcolorbox}[mathbox]
+$\dfrac{1}{c} = 3.3356\;\text{ns}
+\qquad
+\text{metre} = c \times \dfrac{1}{c} = 1\;\text{m}$
+\end{tcolorbox}
+
+\noindent
+Light crosses one metre in $3.3356$~ns; multiply that time back by $c$ and
+one metre returns, unchanged. Only the quantity held fixed changed. The
+length did not.
+
+% ===================== PART III =====================
+\partdiv{Part III: Conversion and Equivalence}
+
+\section{Converting li to metres, and the summary}
+
+The li circle measures the heavens; the metric circle measures the
+terrestrial sphere. The two-sphere model sets the two in 1:1 correspondence,
+so the celestial circumference $128{,}300$~li and Earth's circumference
+$40{,}075$~km describe one circle. Dividing gives the conversion factor.
+
+\begin{tcolorbox}[mathbox]
+$1\;\text{li} = \dfrac{40{,}075{,}000\;\text{m}}{128{,}300\;\text{li}}
+ \approx 312.35\;\text{m} = 0.31235\;\text{km}$
+\end{tcolorbox}
+
+\noindent
+Every distance is $R$ times a factor built only from angles. The angle
+factors are identical in both systems, so multiplying any li value by
+$312.35$~m/li reproduces the metre value exactly.
+
+\begin{center}
+\renewcommand{\arraystretch}{1.15}
+\begin{tabular}{l r r}
+\textbf{Quantity} & \textbf{Chinese (li)} & \textbf{Metric (m / km)}\\
+\hline
+Radius $R$              & $20{,}420$~li            & $6{,}378$~km\\
+Moon distance           & $1.232\times10^{6}$~li   & $384{,}690$~km\\
+Sun distance (1 AU)     & $4.789\times10^{8}$~li   & $1.496\times10^{8}$~km\\
+AU via aberration       & $4.790\times10^{8}$~li   & $1.496\times10^{8}$~km\\
+1 light-minute          & $5.759\times10^{7}$~li   & $1.799\times10^{7}$~km\\
+Speed of light $c$      & $959{,}787$~li/s         & $299{,}792{,}458$~m/s\\
+\hline
+\end{tabular}
+\end{center}
+
+\begin{tcolorbox}[mathbox]
+\textbf{Check.} $\;1{,}231{,}591\;\text{li} \times 312.35\;\text{m/li}
+ = 384{,}691{,}000\;\text{m} = 384{,}691\;\text{km}$ \quad (the Moon, both ways)
+\end{tcolorbox}
+
+\noindent
+The li ladder and the metric ladder are one ladder, read through the
+$312.35$ factor. Neither unit is more correct than the other.
+
+\section*{Closing}
+
+Each distance here is fixed by one chosen radius and a set of measured
+angles. Run the calculation in li or in metres and only the labels change;
+convert between them and every value matches. A system of mutually reliant
+ratios is internally consistent by construction. As de Sitter noted, that is
+not the same as being independently verified.
+
+\section*{References}
+
+{\footnotesize\setlength{\parindent}{0pt}\setlength{\parskip}{2.3pt}
+
+\hangindent=1.3em Beer, A., Ho Ping-Y\"u, Lu Gwei-Djen, Needham, J.,
+Pulleyblank, E.~G., \& Thompson, G.~I. (1961). An 8th-century meridian line:
+I-Hsing's chain of gnomons and the pre-history of the metric system.
+\emph{Vistas in Astronomy}, 4, 3--28.\par
+
+\hangindent=1.3em Bradley, J. (1728). An account of a new discovered motion of
+the fixed stars. \emph{Philosophical Transactions of the Royal Society}, 35,
+637--661.\par
+
+\hangindent=1.3em Cullen, C. (1996). \emph{Astronomy and Mathematics in
+Ancient China: The Zhou Bi Suan Jing}. Cambridge: Cambridge University Press.\par
+
+\hangindent=1.3em de Sitter, W., \& Brouwer, D. (1938). On the system of
+astronomical constants. \emph{Bulletin of the Astronomical Institutes of the
+Netherlands}, 8(307), 213--231.\par
+
+\hangindent=1.3em Foucault, L. (1862). D\'etermination exp\'erimentale de la
+vitesse de la lumi\`ere; parallaxe du Soleil. \emph{Comptes Rendus de
+l'Acad\'emie des Sciences}, 55, 501--503.\par
+
+\hangindent=1.3em Laplace, P.-S. (1805). \emph{Trait\'e de M\'ecanique
+C\'eleste, Tome~IV: Th\'eorie des satellites de Jupiter}. Paris: Courcier.\par
+
+\hangindent=1.3em Needham, J. (1959). \emph{Science and Civilisation in China,
+Volume~3: Mathematics and the Sciences of the Heavens and the Earth}.
+Cambridge: Cambridge University Press.\par
+
+}
+
+\end{document}
