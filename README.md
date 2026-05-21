@@ -12,10 +12,11 @@ redefinition of the metre through *c*.
 
 ## Files
 
-- `units_of_measurement.pdf` — the brief (6 pages)
-- `units_of_measurement.tex` — LaTeX source
-- `units_of_measurement.ipynb` — companion notebook with the worked computations
-- `ac_logo.png` — figure used in the brief
+- `units_of_measurement.pdf`: the brief (6 pages)
+- `units_of_measurement.tex`: LaTeX source
+- `units_of_measurement.ipynb`: companion notebook with the worked computations
+- `null_hypothesis.md`: the internal-consistency null hypothesis (H₀ / H₁)
+- `ac_logo.png`: figure used in the brief
 
 ## Build
 
